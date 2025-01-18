@@ -10,7 +10,8 @@ spec:
   - name: abccon
     image: adamumoh/abc_tech:latest
     ports:
-    - 8080
+      - containerPort: 8080
+        protocol: TCP
 ---
 
 apiVersion: v1
@@ -22,7 +23,7 @@ spec:
   selector:
    app: demo
   ports:
-    protocol: TCP
-    port: 32000
-    targetport: 8080
+    - containerPort: 32000
+      protocol: TCP
+      targetport: 8080
 
