@@ -10,8 +10,8 @@ spec:
   - name: abccon
     image: adamumoh/abc_tech:latest
     ports:
-      - containerPort: 8080
-        protocol: TCP
+    - 8080
+    
 ---
 
 apiVersion: v1
