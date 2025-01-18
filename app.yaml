@@ -23,7 +23,7 @@ spec:
   selector:
    app: demo
   ports:
-    - containerPort: 32000
-      protocol: TCP
-      targetport: 8080
+    protocol: TCP
+    port: 8080
+    targetport: 8080
 
